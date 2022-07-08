@@ -12,8 +12,8 @@ resource "aws_instance" "example" {
   }
 }
 
-resource "aws_security_group" "sg_ssh" {
-  name = "sg_ssh"
+resource "aws_security_group" "sg" {
+  name = "sg_tfc"
   ingress {
     from_port   = "22"
     to_port     = "22"
